@@ -21,3 +21,13 @@ dev = [
 [project.scripts]
 greet = "hello.app:greet"
 goodbye = "hello.app:salute"
+
+[tool.pylint.main]
+max-line-length = 120
+disable = [
+    "C0114", # missing-module-docstring
+    "C0115", # missing-class-docstring
+    "C0116", # missing-function-docstring
+    "W0621"  # redefined-outer-name
+]
+module-naming-style = "any"
