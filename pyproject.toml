@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "RyansApp"
+version = "1.0"
+
+dependencies = [
+    "requests"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov[all]",
+    "black",
+    "pylint",
+    "ruff"
+]
+
+[project.scripts]
+greet = "hello.app:greet"
+goodbye = "hello.app:salute"
