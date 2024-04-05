@@ -21,6 +21,7 @@ dev = [
 [project.scripts]
 greet = "hello.app:greet"
 goodbye = "hello.app:salute"
+play = "games.palindromes:play_palindromes"
 
 [tool.pylint.main]
 max-line-length = 120
