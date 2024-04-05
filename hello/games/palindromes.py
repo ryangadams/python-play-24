@@ -8,7 +8,7 @@ data7 = "Some men interpret nine memos"
 
 
 def check_for_palindrome(input):
-    pass
+    print(input)
 
 
 def play_palindromes():
